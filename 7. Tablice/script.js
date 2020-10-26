@@ -1,4 +1,8 @@
 //Zadanie 1
+const tab = ["Bartek", "ma", "długopis"];
+console.log(tab[0]);
+console.log(tab[1]);
+console.log(tab[2]);
 
 //Zadanie 2
 const tab = ["Bartek", "ma", "długopis", 3, 5];

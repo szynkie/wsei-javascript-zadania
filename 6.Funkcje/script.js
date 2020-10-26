@@ -5,8 +5,17 @@ const randomName = () =>{
 randomName();
 
 //Zadanie 2
+let x =2;
+const randomName = (x) =>{
+    console.log(x);
+}
+randomName(x);
 
 //Zadanie 3
+const x = (param) =>{
+    return param;
+}
+x([1,2,3]);
 
 //Zadanie 4
 const func2 = (str) =>{
