@@ -113,3 +113,34 @@ const averageArrFunc1 = (arr = []) => {
 };
 
 console.log(averageArrFunc1([9, 1, 7, 2, 1, 1, 6, 3, 2]));
+
+//Zadanie 7
+const toSortArray = [9, 2, 22, 5, 7, 4];
+
+const sortTab = toSortArray.sort((a, b) => a - b);
+console.log(sortTab);
+
+//Zadanie 8
+const toSumArrayA = [2, 3, 2]
+const toSumArrayB = [1, 4, 3]
+
+function sumArraysValue(arrayA, arrayB) {
+    let newArray = [];
+
+    arrayA.forEach((num1, i) => {
+        newArray.push(num1 + arrayB[i]);
+    });
+
+    return newArray;
+}
+
+console.log(sumArraysValue(toSumArrayA, toSumArrayB));
+
+//Zadanie 10
+const numbers2 = [-2, 5, -1, -23, 64];
+
+function changeElement(arr) {
+    return arr.map(n => n *= -1); 
+}
+
+console.log(changeElement(numbers2));
