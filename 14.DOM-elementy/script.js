@@ -85,3 +85,24 @@ function setToDivId(objectWithSomeString) {
 }
 
 makeObject("sample");
+
+// Zadanie 9
+const addFunc = (num) => {
+    const newClass = num % 2 === 0 ? "even" : "odd";
+    console.log(num, newClass);
+    document.getElementById("numbers").classList.add(newClass);
+  };
+  addFunc(Math.floor(Math.random() * 11));
+  
+  // Zadanie 10
+  const getValues = (elem) => [...elem.children].map((e) => e.innerText);
+  console.log(getValues(document.getElementById("longList")));
+  
+  // Zadanie 11
+  const changeValues = (elem) => {
+    [...elem.children].forEach((e) => {
+      e.setAttribute("old-value", e.innerText);
+      e.innerText = Math.floor(Math.random() * 11);
+    });
+  };
+  changeValues(document.getElementById("longList"));
